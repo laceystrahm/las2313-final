@@ -2,7 +2,7 @@
 """
 Created on Tue Apr 21 14:57:17 2020
 
-@author: etill
+@author: laceystrahm
 """
 
 #import statements
@@ -11,10 +11,19 @@ from flask import Flask, render_template
 #Flask app variable
 app = Flask(__name__)
 
-#static route
+#static default home route
 @app.route("/")
-def hello():
-    return render_template("index.html")
+def home():
+    return render_template("home.html")
+
+@app.route("/1006assignments")
+def ENGI_1006_Assignments():
+    #has to be in templates folder to render html
+    return render_template("1006assignments.html")
+
+@app.route("/ISC")
+def Information_Science_Courses():
+    return render_template("InformationScienceCourses.html")
 
 #start the server
 if __name__ == "__main__":
