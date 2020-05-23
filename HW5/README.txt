@@ -1,0 +1,11 @@
+This is a machine learning library with the following features:
+- Some statistics on the dataset using pandas
+- Skewness and kurtosis of each column in the dataset
+- Mean/Std Deviation of each column, grouped into benign/malignant
+- Plot some more advanced information using seaboard 
+- Pairplot of each column against other columns
+- Heatmap of the column correlations
+- Implement the K nearest neighbors algorithm from class 
+- Use scikit-learn to implement
+- K Nearest neighbors (for comparison) 
+- Support Vector Machine classifier
